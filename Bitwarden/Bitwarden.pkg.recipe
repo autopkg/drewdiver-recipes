@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads latest Boxcryptor disk image and builds a package.</string>
+    <string>Downloads latest Bitwarden disk image and builds a package.</string>
     <key>Identifier</key>
     <string>com.github.grumpydrew.pkg.Bitwarden</string>
     <key>Input</key>
