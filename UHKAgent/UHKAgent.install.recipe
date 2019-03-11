@@ -3,7 +3,7 @@
 <plist version="1.0">
     <dict>
         <key>Description</key>
-        <string>Downloads Calibre and installs it.</string>
+        <string>Downloads the Ultimate Hacking Keyboard agent and installs it.</string>
         <key>Identifier</key>
         <string>com.github.grumpydrew.install.UHKAgent</string>
         <key>Input</key>
