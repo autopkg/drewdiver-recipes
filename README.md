@@ -1,3 +1,3 @@
-# My AutoPkg Recipes
+# drewdiver-recipes
 
-These are agnostic, feel free to use.
+Hopefully others will find these useful.
