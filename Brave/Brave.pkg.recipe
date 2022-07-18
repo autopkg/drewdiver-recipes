@@ -12,7 +12,7 @@
         <string>Brave</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.apettinen.download.brave</string>
+    <string>com.github.grumpydrew.download.Brave</string>
     <key>Process</key>
     <array>
         <dict>
