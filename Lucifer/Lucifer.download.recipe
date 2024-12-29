@@ -8,41 +8,50 @@
     <string>com.github.grumpydrew.download.lucifer</string>
     <key>Input</key>
     <dict>
-    	<key>NAME</key>
-    	<string>lucifer</string>
-    	<key>URL</key>
-    	<string>https://www.hexedbits.com/downloads</string>
+        <key>NAME</key>
+        <string>lucifer</string>
+        <key>URL</key>
+        <string>https://www.hexedbits.com/downloads</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.4.0</string>
     <key>Process</key>
     <array>
-    	<dict>
-    		<key>Processor</key>
-    		<string>URLDownloader</string>
-    		<key>Arguments</key>
-    		<dict>
-    			<key>url</key>
-    			<string>%URL%/%NAME%.zip</string>
-    		</dict>
-    	</dict>
+        <dict>
+            <key>Processor</key>
+            <string>DeprecationWarning</string>
+            <key>Arguments</key>
+            <dict>
+                <key>warning_message</key>
+                <string>Lucifer app downloads are now gated behind a payment system. This recipe is deprecated and will be removed in the future.</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>URLDownloader</string>
+            <key>Arguments</key>
+            <dict>
+                <key>url</key>
+                <string>%URL%/%NAME%.zip</string>
+            </dict>
+        </dict>
         <dict>
             <key>Processor</key>
             <string>EndOfCheckPhase</string>
         </dict>
         <dict>
         <key>Processor</key>
-		  <string>Unarchiver</string>
-		  <key>Arguments</key>
-		  <dict>
-			  <key>archive_path</key>
-			  <string>%RECIPE_CACHE_DIR%/downloads/%NAME%.zip</string>
-			  <key>destination_path</key>
-			  <string>%RECIPE_CACHE_DIR%/%NAME%</string>
-			  <key>purge_destination</key>
-			  <true/>
-		  </dict>
-		</dict>
+          <string>Unarchiver</string>
+          <key>Arguments</key>
+          <dict>
+              <key>archive_path</key>
+              <string>%RECIPE_CACHE_DIR%/downloads/%NAME%.zip</string>
+              <key>destination_path</key>
+              <string>%RECIPE_CACHE_DIR%/%NAME%</string>
+              <key>purge_destination</key>
+              <true/>
+          </dict>
+        </dict>
         <dict>
             <key>Processor</key>
             <string>CodeSignatureVerifier</string>
