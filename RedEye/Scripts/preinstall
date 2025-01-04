@@ -1,8 +1,0 @@
-#!/bin/sh
-
-# Remove previous version of Red Eye from /Applications
-
-if [ -d "$3/Applications/Red Eye.app" ]; then
-   rm -rf "$3/Applications/Red Eye.app"
-fi
-
