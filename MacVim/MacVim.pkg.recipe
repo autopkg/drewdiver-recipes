@@ -12,7 +12,7 @@
         <string>MacVim</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.grumpydrew.download.MacVim</string>
+    <string>com.github.jleggat.MacVim.download</string>
     <key>Process</key>
     <array>
         <dict>
